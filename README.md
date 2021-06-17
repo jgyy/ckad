@@ -1,2 +1,2 @@
-# ckad
+# CKAD
 kubernetes exam practice only
