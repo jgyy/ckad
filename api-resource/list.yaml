@@ -110,43 +110,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:58Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:58Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://5d4cc05cb7f34a0b64df77688fb7007e2989e9e4c8bd10cfc93f311b1eafceb6
-      image: httpd:2.4-alpine
-      imageID: docker-pullable://httpd@sha256:cb08a987f18cb8f7366f7a81d8b8a894a2058c6cf4768776dac66e379fff966d
-      lastState: {}
-      name: api
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:58Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.13
-    podIPs:
-    - ip: 10.44.0.13
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -217,43 +180,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:35Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:35Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:05Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://70ea8f85caea6c4fbe12fa9353c2b05200d250911a75581c337feb90e8448265
-      image: httpd:2.4-alpine
-      imageID: docker-pullable://httpd@sha256:cb08a987f18cb8f7366f7a81d8b8a894a2058c6cf4768776dac66e379fff966d
-      lastState: {}
-      name: api
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:33Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.1
-    podIPs:
-    - ip: 10.44.0.1
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -324,43 +250,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:37Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:37Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://41f94d8daa8ceabdb62b666d98860babdd6d815a6a5016f7307ac21dcd0158c6
-      image: httpd:2.4-alpine
-      imageID: docker-pullable://httpd@sha256:cb08a987f18cb8f7366f7a81d8b8a894a2058c6cf4768776dac66e379fff966d
-      lastState: {}
-      name: api
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:37Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.5
-    podIPs:
-    - ip: 10.44.0.5
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -431,43 +320,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:37Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:37Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://bf06f5e27ab89439a71acbfc60ad05221229e5c980c1811225e054ce60bf223e
-      image: httpd:2.4-alpine
-      imageID: docker-pullable://httpd@sha256:cb08a987f18cb8f7366f7a81d8b8a894a2058c6cf4768776dac66e379fff966d
-      lastState: {}
-      name: httpd
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:35Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.3
-    podIPs:
-    - ip: 10.44.0.3
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -538,43 +390,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:54Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:54Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://ae39022344974a5d62a7ecd00fbd8780284809ee6de2e88c560d5ee52c8e5d80
-      image: httpd:2.4-alpine
-      imageID: docker-pullable://httpd@sha256:cb08a987f18cb8f7366f7a81d8b8a894a2058c6cf4768776dac66e379fff966d
-      lastState: {}
-      name: httpd
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:53Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.7
-    podIPs:
-    - ip: 10.44.0.7
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -645,43 +460,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:57Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:57Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://08911c1a1bdf8c38104fc6191a8a4dd3d34e14bc6dccd45f498b9fda72067418
-      image: httpd:2.4-alpine
-      imageID: docker-pullable://httpd@sha256:cb08a987f18cb8f7366f7a81d8b8a894a2058c6cf4768776dac66e379fff966d
-      lastState: {}
-      name: httpd
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:56Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.12
-    podIPs:
-    - ip: 10.44.0.12
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -752,43 +530,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:53Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:53Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://4db69d10d65e42dda11349b9a71c7a4500e263c89f2a4290819fda5c846707ad
-      image: httpd:2.4-alpine
-      imageID: docker-pullable://httpd@sha256:cb08a987f18cb8f7366f7a81d8b8a894a2058c6cf4768776dac66e379fff966d
-      lastState: {}
-      name: httpd
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:52Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.6
-    podIPs:
-    - ip: 10.44.0.6
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -859,43 +600,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:36Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:36Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:05Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://786b1501b8f826a9d063178382965b0e302e04b6b4b34c92f01da3f284f88186
-      image: httpd:2.4-alpine
-      imageID: docker-pullable://httpd@sha256:cb08a987f18cb8f7366f7a81d8b8a894a2058c6cf4768776dac66e379fff966d
-      lastState: {}
-      name: httpd
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:36Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.2
-    podIPs:
-    - ip: 10.44.0.2
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -966,43 +670,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:56Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:56Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://9fc0729757a237a9afe5af4d18fc45dae9f0fced34f6847ce027b46a23411eac
-      image: httpd:2.4-alpine
-      imageID: docker-pullable://httpd@sha256:cb08a987f18cb8f7366f7a81d8b8a894a2058c6cf4768776dac66e379fff966d
-      lastState: {}
-      name: httpd
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:55Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.9
-    podIPs:
-    - ip: 10.44.0.9
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -1077,43 +744,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:07Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:57Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:57Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:07Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://f553140ba7e8e0b1100d27271b7017c2947684373011e959049126709a9b148d
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: python
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:56Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.10
-    podIPs:
-    - ip: 10.44.0.10
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:07Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -1188,43 +818,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:07Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:54Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:54Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://c7aba8e82ab60d27745fa60e81ad29e3e2458d20487cafdc5ec997205036cd80
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: python
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:54Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.8
-    podIPs:
-    - ip: 10.44.0.8
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:07Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -1299,43 +892,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:13Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:13Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://67563befaf69fca61c9bdb6925778ea9ac182281081f95582025cb34620f8116
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: python
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:12Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.15
-    podIPs:
-    - ip: 10.44.0.15
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -1410,43 +966,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:14Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:14Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://463b53f2c3a30971eefa3a2eb467a070e24fcffc4e580f089a68480dde1d83b7
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: python
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:12Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.16
-    podIPs:
-    - ip: 10.44.0.16
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -1521,43 +1040,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:51Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:51Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://8cf5eabf0b2a6c88994682502b886c47f3fd8fb62dcbc8821f4f3af71c7fcfb1
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: python
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:51Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.4
-    podIPs:
-    - ip: 10.44.0.4
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -1632,43 +1114,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:59Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:09:59Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:06Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://1239aa46917f6911c57f92685e759132cf4ddd5f7cba136912f41e7bf8def7c4
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: python
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:09:59Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.11
-    podIPs:
-    - ip: 10.44.0.11
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:06Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -1747,47 +1192,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:46Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:46Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:46Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:46Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://c8b21bb8344a803a518154518443c9b54229bbd772745dcfd9722022744aece0
-      image: nginx:1.16.1-alpine
-      imageID: docker-pullable://nginx@sha256:5057451e461dda671da5e951019ddbff9d96a751fc7d548053523ca1f848c1ad
-      lastState: {}
-      name: nginx
-      ready: false
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:31Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.62
-    podIPs:
-    - ip: 10.44.0.62
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:46Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -1866,47 +1270,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:47Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:47Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:47Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:46Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://335cbaa205357dc98b94addb75ab2e10a178012214e34b60b280c85c9ff281de
-      image: nginx:1.16.1-alpine
-      imageID: docker-pullable://nginx@sha256:5057451e461dda671da5e951019ddbff9d96a751fc7d548053523ca1f848c1ad
-      lastState: {}
-      name: nginx
-      ready: false
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:18Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.57
-    podIPs:
-    - ip: 10.44.0.57
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:47Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -1985,47 +1348,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:47Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:47Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:47Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:46Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://c0a7332cf7759999d3fbb5971092a6b56cfe4bd2b7ead52a5b40ffdfd24242e3
-      image: nginx:1.16.1-alpine
-      imageID: docker-pullable://nginx@sha256:5057451e461dda671da5e951019ddbff9d96a751fc7d548053523ca1f848c1ad
-      lastState: {}
-      name: nginx
-      ready: false
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:23Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.60
-    podIPs:
-    - ip: 10.44.0.60
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:47Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -2104,47 +1426,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:46Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:46Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:46Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:46Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://97cbdec37e509032f031eee163bad508b726965077f3142c4e0f01d8fc1a1c73
-      image: nginx:1.16.1-alpine
-      imageID: docker-pullable://nginx@sha256:5057451e461dda671da5e951019ddbff9d96a751fc7d548053523ca1f848c1ad
-      lastState: {}
-      name: nginx
-      ready: false
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:32Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.61
-    podIPs:
-    - ip: 10.44.0.61
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:46Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -2285,43 +1566,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:08Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:57Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:57Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:08Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://e9b25ad0feb8b81a5fe018b8a96036f678c89b977a73f3fc4028dcf7cba243bc
-      image: nginx:1.17.3-alpine
-      imageID: docker-pullable://nginx@sha256:99be6ae8d32943b676031b3513782ad55c8540c1d040b1f7b8c335c67a241b06
-      lastState: {}
-      name: nginx
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:56Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.26
-    podIPs:
-    - ip: 10.44.0.26
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:08Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -2392,43 +1636,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:08Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:38Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:38Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:08Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://11c9862cff23ebbfe9173a60b6b2d3f73771236b1209db26cf7feecceef4c9e1
-      image: nginx:1.17.3-alpine
-      imageID: docker-pullable://nginx@sha256:99be6ae8d32943b676031b3513782ad55c8540c1d040b1f7b8c335c67a241b06
-      lastState: {}
-      name: nginx
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:37Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.21
-    podIPs:
-    - ip: 10.44.0.21
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:08Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -2499,43 +1706,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:08Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:22Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:22Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:08Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://13fe90eaf481a2f2dbad533407305fce9eac8547570ac1704e36a8404f385f24
-      image: nginx:1.17.3-alpine
-      imageID: docker-pullable://nginx@sha256:99be6ae8d32943b676031b3513782ad55c8540c1d040b1f7b8c335c67a241b06
-      lastState: {}
-      name: nginx
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:22Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.18
-    podIPs:
-    - ip: 10.44.0.18
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:08Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -2606,43 +1776,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:08Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:22Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:22Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:08Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://900d8eed5d221b43859916cbcafa43c6d1d8c046b49a4fda3345f78b45d6e44e
-      image: nginx:1.17.3-alpine
-      imageID: docker-pullable://nginx@sha256:99be6ae8d32943b676031b3513782ad55c8540c1d040b1f7b8c335c67a241b06
-      lastState: {}
-      name: nginx
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:21Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.17
-    podIPs:
-    - ip: 10.44.0.17
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:08Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -2739,58 +1872,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:46Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:47Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:47Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:08Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://8b699202a64b2eb5cc427cbeb6aecf18eaa578abd143537a74f803df4228f440
-      image: bash:5.0.11
-      imageID: docker-pullable://bash@sha256:057fdd2627533fb8795ef6ad122155d4a3a0b7c0feabac48b9c7faaabfce8231
-      lastState: {}
-      name: cleaner-con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:46Z"
-    hostIP: 192.168.100.12
-    initContainerStatuses:
-    - containerID: docker://6896e9eea76cb6ee51dc9fccef5e4688e293e747a626492144a12625182b62b6
-      image: bash:5.0.11
-      imageID: docker-pullable://bash@sha256:057fdd2627533fb8795ef6ad122155d4a3a0b7c0feabac48b9c7faaabfce8231
-      lastState: {}
-      name: init
-      ready: true
-      restartCount: 0
-      state:
-        terminated:
-          containerID: docker://6896e9eea76cb6ee51dc9fccef5e4688e293e747a626492144a12625182b62b6
-          exitCode: 0
-          finishedAt: "2021-05-11T13:10:44Z"
-          reason: Completed
-          startedAt: "2021-05-11T13:10:44Z"
-    phase: Running
-    podIP: 10.44.0.25
-    podIPs:
-    - ip: 10.44.0.25
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:09Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -2887,58 +1968,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:57Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:59Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:59Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:08Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://b3fc72acaf771d193f8d166f153823cd15d9a6ee8448bdc0ef43830fb8be9e34
-      image: bash:5.0.11
-      imageID: docker-pullable://bash@sha256:057fdd2627533fb8795ef6ad122155d4a3a0b7c0feabac48b9c7faaabfce8231
-      lastState: {}
-      name: cleaner-con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:58Z"
-    hostIP: 192.168.100.12
-    initContainerStatuses:
-    - containerID: docker://13e49fb964eac26c804675a7b0f95811d56144228d7888a8aa3e1522227d352f
-      image: bash:5.0.11
-      imageID: docker-pullable://bash@sha256:057fdd2627533fb8795ef6ad122155d4a3a0b7c0feabac48b9c7faaabfce8231
-      lastState: {}
-      name: init
-      ready: true
-      restartCount: 0
-      state:
-        terminated:
-          containerID: docker://13e49fb964eac26c804675a7b0f95811d56144228d7888a8aa3e1522227d352f
-          exitCode: 0
-          finishedAt: "2021-05-11T13:10:55Z"
-          reason: Completed
-          startedAt: "2021-05-11T13:10:55Z"
-    phase: Running
-    podIP: 10.44.0.22
-    podIPs:
-    - ip: 10.44.0.22
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:08Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -3029,43 +2058,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:59Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:59Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://59d1dde11f2f66e7d50d609984f9d4e7978ac280be9f51a784e915ac1d720a39
-      image: bash:5.0.11
-      imageID: docker-pullable://bash@sha256:057fdd2627533fb8795ef6ad122155d4a3a0b7c0feabac48b9c7faaabfce8231
-      lastState: {}
-      name: secret-handler
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:57Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.28
-    podIPs:
-    - ip: 10.44.0.28
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:11Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -3145,43 +2137,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - image: nginx:1.17.3-alpine
-      imageID: ""
-      lastState: {}
-      name: nginx
-      ready: false
-      restartCount: 0
-      started: false
-      state:
-        waiting:
-          reason: ContainerCreating
-    hostIP: 192.168.100.12
-    phase: Pending
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:09Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -3261,43 +2216,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - image: nginx:1.17.3-alpine
-      imageID: ""
-      lastState: {}
-      name: nginx
-      ready: false
-      restartCount: 0
-      started: false
-      state:
-        waiting:
-          reason: ContainerCreating
-    hostIP: 192.168.100.12
-    phase: Pending
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:09Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -3377,43 +2295,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - image: nginx:1.17.3-alpine
-      imageID: ""
-      lastState: {}
-      name: nginx
-      ready: false
-      restartCount: 0
-      started: false
-      state:
-        waiting:
-          reason: ContainerCreating
-    hostIP: 192.168.100.12
-    phase: Pending
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:09Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -3493,43 +2374,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - image: nginx:1.17.3-alpine
-      imageID: ""
-      lastState: {}
-      name: nginx
-      ready: false
-      restartCount: 0
-      started: false
-      state:
-        waiting:
-          reason: ContainerCreating
-    hostIP: 192.168.100.12
-    phase: Pending
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:09Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -3609,43 +2453,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - image: nginx:1.17.3-alpine
-      imageID: ""
-      lastState: {}
-      name: nginx
-      ready: false
-      restartCount: 0
-      started: false
-      state:
-        waiting:
-          reason: ContainerCreating
-    hostIP: 192.168.100.12
-    phase: Pending
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:09Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -3716,47 +2523,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      message: 'containers with unready status: [nginx]'
-      reason: ContainersNotReady
-      status: "False"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:10Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - image: ngnix:1.16.3
-      imageID: ""
-      lastState: {}
-      name: nginx
-      ready: false
-      restartCount: 0
-      started: false
-      state:
-        waiting:
-          message: Back-off pulling image "ngnix:1.16.3"
-          reason: ImagePullBackOff
-    hostIP: 192.168.100.12
-    phase: Pending
-    podIP: 10.44.0.20
-    podIPs:
-    - ip: 10.44.0.20
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:11Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -3827,43 +2593,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:35Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:35Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://912e91c3991b098f1a0616e3bd79e0b1475a612b7585ef3c90a84e259dac5206
-      image: nginx:1.16.1
-      imageID: docker-pullable://nginx@sha256:d20aa6d1cae56fd17cd458f4807e0de462caf2336f0b70b5eeb69fcaaf30dd9c
-      lastState: {}
-      name: nginx
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:35Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.19
-    podIPs:
-    - ip: 10.44.0.19
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:09Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -3934,43 +2663,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:55Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:55Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://02ba32e80d856ad2287cdeb720875d2c1ce240cfbc49104a4dfd1d9b13d37e00
-      image: nginx:1.16.1
-      imageID: docker-pullable://nginx@sha256:d20aa6d1cae56fd17cd458f4807e0de462caf2336f0b70b5eeb69fcaaf30dd9c
-      lastState: {}
-      name: nginx
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:54Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.23
-    podIPs:
-    - ip: 10.44.0.23
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:09Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -4041,43 +2733,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:55Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:55Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:09Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://81c9f8c58105add0d824dd014d7d4e0fc563ab25a4c6a3e74f5f73112ff1206e
-      image: nginx:1.16.1
-      imageID: docker-pullable://nginx@sha256:d20aa6d1cae56fd17cd458f4807e0de462caf2336f0b70b5eeb69fcaaf30dd9c
-      lastState: {}
-      name: nginx
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:54Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.24
-    podIPs:
-    - ip: 10.44.0.24
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:09Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -4161,43 +2816,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:09Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:09Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://57face2eef6121ad22ada691d6b70bfe0e39a770b512dfbb4e7c28507a7fd961
-      image: nginx:1.17.3-alpine
-      imageID: docker-pullable://nginx@sha256:99be6ae8d32943b676031b3513782ad55c8540c1d040b1f7b8c335c67a241b06
-      lastState: {}
-      name: holy-api-container
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:08Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.36
-    podIPs:
-    - ip: 10.44.0.36
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:11Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -4287,43 +2905,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:10Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:03Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:03Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:10Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://7ffb111e43c646eaac0670acdeff4501f03b00219e106895baab079084e0aa9c
-      image: httpd:2.4-alpine
-      imageID: docker-pullable://httpd@sha256:cb08a987f18cb8f7366f7a81d8b8a894a2058c6cf4768776dac66e379fff966d
-      lastState: {}
-      name: httpd
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:03Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.32
-    podIPs:
-    - ip: 10.44.0.32
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:10Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -4413,43 +2994,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:10Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:59Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:59Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:10Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://4d5bf0b90439ef2a757d2b817faf228736906e11c2e82d40328f30c04b95e460
-      image: httpd:2.4-alpine
-      imageID: docker-pullable://httpd@sha256:cb08a987f18cb8f7366f7a81d8b8a894a2058c6cf4768776dac66e379fff966d
-      lastState: {}
-      name: httpd
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:58Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.29
-    podIPs:
-    - ip: 10.44.0.29
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:10Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -4539,43 +3083,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:06Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:06Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:10Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://42b7ed308384cb5a6d64a341c6b002d0a365ed036c0271522857433460c6d840
-      image: httpd:2.4-alpine
-      imageID: docker-pullable://httpd@sha256:cb08a987f18cb8f7366f7a81d8b8a894a2058c6cf4768776dac66e379fff966d
-      lastState: {}
-      name: httpd
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:05Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.35
-    podIPs:
-    - ip: 10.44.0.35
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:11Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -4641,43 +3148,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:08Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:08Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://da53dff5aa19fbaeccdfc824dbcfe6b0f5f0b4b4f6c429db117c06118d4c0d2e
-      image: nginx:1.17.3-alpine
-      imageID: docker-pullable://nginx@sha256:99be6ae8d32943b676031b3513782ad55c8540c1d040b1f7b8c335c67a241b06
-      lastState: {}
-      name: webserver-sat
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:07Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.42
-    podIPs:
-    - ip: 10.44.0.42
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:11Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -4742,43 +3212,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:30Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:30Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://1268550643e17825c4841802ab0aed467bb51df6919eeb89b86c10ed2441cf5d
-      image: nginx:1.17.3-alpine
-      imageID: docker-pullable://nginx@sha256:99be6ae8d32943b676031b3513782ad55c8540c1d040b1f7b8c335c67a241b06
-      lastState: {}
-      name: webserver-sat
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:29Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.58
-    podIPs:
-    - ip: 10.44.0.58
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:12Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -4844,43 +3277,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:54Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:10:54Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://7d357af16be4e973fa087d914c81aaca187e4c799819a74a627d731af5b72267
-      image: nginx:1.16.1-alpine
-      imageID: docker-pullable://nginx@sha256:5057451e461dda671da5e951019ddbff9d96a751fc7d548053523ca1f848c1ad
-      lastState: {}
-      name: webserver-sat
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:54Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.27
-    podIPs:
-    - ip: 10.44.0.27
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:12Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -4946,43 +3342,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:14Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:14Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://0d0e39369be263cb82aa647df979976fe48929b1dc29d05052d06811d2f39bf6
-      image: nginx:1.16.1-alpine
-      imageID: docker-pullable://nginx@sha256:5057451e461dda671da5e951019ddbff9d96a751fc7d548053523ca1f848c1ad
-      lastState: {}
-      name: webserver-sat
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:13Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.46
-    podIPs:
-    - ip: 10.44.0.46
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:12Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -5048,43 +3407,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:16Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:16Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://270b93c354bc17fc7b918979106a804291ce52da880c082b2fcbd0d84ef9bceb
-      image: nginx:1.16.1-alpine
-      imageID: docker-pullable://nginx@sha256:5057451e461dda671da5e951019ddbff9d96a751fc7d548053523ca1f848c1ad
-      lastState: {}
-      name: webserver-sat
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:14Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.33
-    podIPs:
-    - ip: 10.44.0.33
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:12Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -5150,43 +3472,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:21Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:21Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://03fa2fe510b198caf4c25df457bca84df1130c34b41bdb1e710b0f31cb779df4
-      image: nginx:1.16.1-alpine
-      imageID: docker-pullable://nginx@sha256:5057451e461dda671da5e951019ddbff9d96a751fc7d548053523ca1f848c1ad
-      lastState: {}
-      name: webserver-sat
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:20Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.56
-    podIPs:
-    - ip: 10.44.0.56
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:12Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -5256,43 +3541,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:11Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:11Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://0083440c023c383c5861f548192615c75c904770022badf32a1111ca6af2face
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:10Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.41
-    podIPs:
-    - ip: 10.44.0.41
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:12Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -5361,43 +3609,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:13Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:13Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://7c06b8c8f185e16edd26e48d770c284d5767d8cddfceff5755b7366afc8d15fa
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:11Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.47
-    podIPs:
-    - ip: 10.44.0.47
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:13Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -5466,43 +3677,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:11Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:11Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:12Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://858d6e79875f52ae138ed25a6151d2918cb07e8c1a7f3dee4fa03c37e19e78c0
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:09Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.43
-    podIPs:
-    - ip: 10.44.0.43
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:13Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -5571,43 +3745,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:23Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:23Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://97dc174e3426581296c6d4353d183bf7da2dba1fc3325a357316d9018ccd2309
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:22Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.54
-    podIPs:
-    - ip: 10.44.0.54
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:13Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -5676,43 +3813,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:27Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:27Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://ef37dfab5027f4c5263b7835ca449a2b0a794429367c831cde287f05a3cddeb9
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:26Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.63
-    podIPs:
-    - ip: 10.44.0.63
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:13Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -5781,43 +3881,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:30Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:30Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://ee17293d876be00c8a9fab65b0de02cd67204f4e252e3d6af9d7ee5444ec83e4
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:30Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.59
-    podIPs:
-    - ip: 10.44.0.59
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:13Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -5886,43 +3949,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:14Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:14Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://3b231554e7fe1cdc2f1cc7e35e9a95e520f71a670b19f989a6f4a94bf42ab678
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:12Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.40
-    podIPs:
-    - ip: 10.44.0.40
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:13Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -5991,43 +4017,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:17Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:17Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://e441d33e7fa3c47a6f23e22c7021708dd2fdbe6011b6c9fbedd84fac232fd8d6
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:17Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.49
-    podIPs:
-    - ip: 10.44.0.49
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:13Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -6096,43 +4085,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:08Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:08Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://4528ad59cd6f1845a028e059514d36dae5a17aad3657dcc26826691e622fb29a
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:07Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.45
-    podIPs:
-    - ip: 10.44.0.45
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:13Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -6201,43 +4153,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:03Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:03Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://014dec9c9dd7b0ce85f67b6b501dfa1366ab526861c9eb5ea0142a2545a7069b
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:02Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.44
-    podIPs:
-    - ip: 10.44.0.44
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:13Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -6306,43 +4221,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:29Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:29Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://a4e1fe45381863477ed6f8e627a9a4ce4c004d10afc3f2edf7be70d5522d21ad
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:28Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.55
-    podIPs:
-    - ip: 10.44.0.55
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:13Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -6411,43 +4289,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:20Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:20Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://bae840bee6a509f5e5dda74902e5601026fa0c9926fbb6c9eecb65a779a509fd
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:19Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.50
-    podIPs:
-    - ip: 10.44.0.50
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:13Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -6517,43 +4358,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:17Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:17Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:13Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://51c76664723ec0f37f28a82ec71b1859f7607a5748269c0dcc306061b16dcda3
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:16Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.48
-    podIPs:
-    - ip: 10.44.0.48
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:13Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -6622,43 +4426,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:14Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:21Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:21Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:14Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://a176fc187b02ff283afceba39a24b1ed78d79c06dc603ee1978b8b6a2aa9fb3b
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:21Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.51
-    podIPs:
-    - ip: 10.44.0.51
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:14Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -6727,43 +4494,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:14Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:26Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:26Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:14Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://9e047d417fb6f4c69cfc9eb7ec2e1ed69d8c51b6e2cabe582b617791fe745fd9
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:25Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.52
-    podIPs:
-    - ip: 10.44.0.52
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:14Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -6832,43 +4562,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:14Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:24Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:24Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:14Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://d48560be6b6f24f0ba3480fb7601d324579d6d0a48bfb4eef8eaf9d6aab690bb
-      image: python:3.7.4-alpine3.9
-      imageID: docker-pullable://python@sha256:0eb2ee4c795e44be3a643e023af28de4c176bee28ba9413c18e08ec10f76c889
-      lastState: {}
-      name: con
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:24Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.53
-    podIPs:
-    - ip: 10.44.0.53
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:14Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -6939,43 +4632,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:16Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:16Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://823b7cec6dd69b8db2d2a36341bd8ba5194a0c297dc39ef72f81a614fe92e6f1
-      image: httpd:2.4.41-alpine
-      imageID: docker-pullable://httpd@sha256:06ad90574c3a152ca91ba9417bb7a8f8b5757b44d232be12037d877e9f8f68ed
-      lastState: {}
-      name: python
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:15Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.37
-    podIPs:
-    - ip: 10.44.0.37
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:11Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -7046,43 +4702,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:00Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:00Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:10Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://b4043a998a0cb2cc2a2fefa0b13cd399677fc2909b49ef28215040cfebb97193
-      image: httpd:2.4.41-alpine
-      imageID: docker-pullable://httpd@sha256:06ad90574c3a152ca91ba9417bb7a8f8b5757b44d232be12037d877e9f8f68ed
-      lastState: {}
-      name: python
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:00Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.30
-    podIPs:
-    - ip: 10.44.0.30
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:11Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -7153,43 +4772,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:27Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:27Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://503d5675406fa192cf55c78ae9b7b399ca14db50c7832c7397c8ddc450b606e7
-      image: nginx:1.17.3-alpine
-      imageID: docker-pullable://nginx@sha256:99be6ae8d32943b676031b3513782ad55c8540c1d040b1f7b8c335c67a241b06
-      lastState: {}
-      name: nginx
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:27Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.64
-    podIPs:
-    - ip: 10.44.0.64
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:11Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -7260,43 +4842,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:05Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:05Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://cdf843494ed1ac332b97b994c6b0051c19eaaf6fea3f35e93a6df11b4488ac85
-      image: nginx:1.17.3-alpine
-      imageID: docker-pullable://nginx@sha256:99be6ae8d32943b676031b3513782ad55c8540c1d040b1f7b8c335c67a241b06
-      lastState: {}
-      name: nginx
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:04Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.39
-    podIPs:
-    - ip: 10.44.0.39
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:11Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -7367,43 +4912,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:02Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:02Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://fcf6c329cc7fb3e4d9e93e738fd447ba83b8868b93f88bf5c849fc6bb993ac57
-      image: nginx:1.17.3-alpine
-      imageID: docker-pullable://nginx@sha256:99be6ae8d32943b676031b3513782ad55c8540c1d040b1f7b8c335c67a241b06
-      lastState: {}
-      name: nginx
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:01Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.31
-    podIPs:
-    - ip: 10.44.0.31
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:11Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -7474,43 +4982,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:06Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:06Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://1d5082ef5d86f77538adfe1e9a828dcc5d7d0faba24530b66953327788346986
-      image: nginx:1.17.3-alpine
-      imageID: docker-pullable://nginx@sha256:99be6ae8d32943b676031b3513782ad55c8540c1d040b1f7b8c335c67a241b06
-      lastState: {}
-      name: nginx
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:11:06Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.34
-    podIPs:
-    - ip: 10.44.0.34
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:11Z"
 - apiVersion: v1
   kind: Pod
   metadata:
@@ -7581,43 +5052,6 @@ items:
                 apiVersion: v1
                 fieldPath: metadata.namespace
               path: namespace
-  status:
-    conditions:
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: Initialized
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:00Z"
-      status: "True"
-      type: Ready
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:11:00Z"
-      status: "True"
-      type: ContainersReady
-    - lastProbeTime: null
-      lastTransitionTime: "2021-05-11T13:08:11Z"
-      status: "True"
-      type: PodScheduled
-    containerStatuses:
-    - containerID: docker://a12c466bc5fd6f7e0b031f7705fe6e2835ac435e7bd0d99319600e1cc3fca5ee
-      image: nginx:1.17.3-alpine
-      imageID: docker-pullable://nginx@sha256:99be6ae8d32943b676031b3513782ad55c8540c1d040b1f7b8c335c67a241b06
-      lastState: {}
-      name: nginx
-      ready: true
-      restartCount: 0
-      started: true
-      state:
-        running:
-          startedAt: "2021-05-11T13:10:59Z"
-    hostIP: 192.168.100.12
-    phase: Running
-    podIP: 10.44.0.38
-    podIPs:
-    - ip: 10.44.0.38
-    qosClass: BestEffort
-    startTime: "2021-05-11T13:08:11Z"
 - apiVersion: v1
   kind: Service
   metadata:
@@ -7647,8 +5081,6 @@ items:
       id: earth-2x3-api
     sessionAffinity: None
     type: ClusterIP
-  status:
-    loadBalancer: {}
 - apiVersion: v1
   kind: Service
   metadata:
@@ -7678,8 +5110,6 @@ items:
       id: earth-2x3-web
     sessionAffinity: None
     type: ClusterIP
-  status:
-    loadBalancer: {}
 - apiVersion: v1
   kind: Service
   metadata:
@@ -7709,8 +5139,6 @@ items:
       id: earth-3cc-web
     sessionAffinity: None
     type: ClusterIP
-  status:
-    loadBalancer: {}
 - apiVersion: v1
   kind: Service
   metadata:
@@ -7738,8 +5166,6 @@ items:
       id: jupiter-crew
     sessionAffinity: None
     type: ClusterIP
-  status:
-    loadBalancer: {}
 - apiVersion: v1
   kind: Service
   metadata:
@@ -7769,8 +5195,6 @@ items:
       id: manager-api-deployment
     sessionAffinity: None
     type: ClusterIP
-  status:
-    loadBalancer: {}
 - apiVersion: v1
   kind: Service
   metadata:
@@ -7798,8 +5222,6 @@ items:
       id: api
     sessionAffinity: None
     type: ClusterIP
-  status:
-    loadBalancer: {}
 - apiVersion: v1
   kind: Service
   metadata:
@@ -7827,8 +5249,6 @@ items:
       id: frontend
     sessionAffinity: None
     type: ClusterIP
-  status:
-    loadBalancer: {}
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -7874,25 +5294,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 3
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:08:05Z"
-      lastUpdateTime: "2021-05-11T13:09:58Z"
-      message: ReplicaSet "earth-2x3-api-686fc9cb8f" has successfully progressed.
-      reason: NewReplicaSetAvailable
-      status: "True"
-      type: Progressing
-    - lastTransitionTime: "2021-05-11T13:22:36Z"
-      lastUpdateTime: "2021-05-11T13:22:36Z"
-      message: Deployment has minimum availability.
-      reason: MinimumReplicasAvailable
-      status: "True"
-      type: Available
-    observedGeneration: 1
-    readyReplicas: 3
-    replicas: 3
-    updatedReplicas: 3
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -7936,25 +5337,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 6
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:08:05Z"
-      lastUpdateTime: "2021-05-11T13:09:57Z"
-      message: ReplicaSet "earth-2x3-web-569bc6cdb7" has successfully progressed.
-      reason: NewReplicaSetAvailable
-      status: "True"
-      type: Progressing
-    - lastTransitionTime: "2021-05-11T13:22:40Z"
-      lastUpdateTime: "2021-05-11T13:22:40Z"
-      message: Deployment has minimum availability.
-      reason: MinimumReplicasAvailable
-      status: "True"
-      type: Available
-    observedGeneration: 1
-    readyReplicas: 6
-    replicas: 6
-    updatedReplicas: 6
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -8005,25 +5387,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 3
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:08:06Z"
-      lastUpdateTime: "2021-05-11T13:10:13Z"
-      message: ReplicaSet "earth-3cc-runner-6cb7f77c44" has successfully progressed.
-      reason: NewReplicaSetAvailable
-      status: "True"
-      type: Progressing
-    - lastTransitionTime: "2021-05-11T13:22:34Z"
-      lastUpdateTime: "2021-05-11T13:22:34Z"
-      message: Deployment has minimum availability.
-      reason: MinimumReplicasAvailable
-      status: "True"
-      type: Available
-    observedGeneration: 1
-    readyReplicas: 3
-    replicas: 3
-    updatedReplicas: 3
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -8074,25 +5437,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 3
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:08:06Z"
-      lastUpdateTime: "2021-05-11T13:10:14Z"
-      message: ReplicaSet "earth-3cc-runner-heavy-5f95d75b54" has successfully progressed.
-      reason: NewReplicaSetAvailable
-      status: "True"
-      type: Progressing
-    - lastTransitionTime: "2021-05-11T13:22:41Z"
-      lastUpdateTime: "2021-05-11T13:22:41Z"
-      message: Deployment has minimum availability.
-      reason: MinimumReplicasAvailable
-      status: "True"
-      type: Available
-    observedGeneration: 1
-    readyReplicas: 3
-    replicas: 3
-    updatedReplicas: 3
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -8141,24 +5485,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:08:07Z"
-      lastUpdateTime: "2021-05-11T13:08:07Z"
-      message: Deployment does not have minimum availability.
-      reason: MinimumReplicasUnavailable
-      status: "False"
-      type: Available
-    - lastTransitionTime: "2021-05-11T13:18:47Z"
-      lastUpdateTime: "2021-05-11T13:18:47Z"
-      message: ReplicaSet "earth-3cc-web-789c6dddc7" has timed out progressing.
-      reason: ProgressDeadlineExceeded
-      status: "False"
-      type: Progressing
-    observedGeneration: 3
-    replicas: 4
-    unavailableReplicas: 4
-    updatedReplicas: 4
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -8202,25 +5528,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 1
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:08:07Z"
-      lastUpdateTime: "2021-05-11T13:10:13Z"
-      message: ReplicaSet "jupiter-crew-deploy-6785c47f64" has successfully progressed.
-      reason: NewReplicaSetAvailable
-      status: "True"
-      type: Progressing
-    - lastTransitionTime: "2021-05-11T13:22:30Z"
-      lastUpdateTime: "2021-05-11T13:22:30Z"
-      message: Deployment has minimum availability.
-      reason: MinimumReplicasAvailable
-      status: "True"
-      type: Available
-    observedGeneration: 1
-    readyReplicas: 1
-    replicas: 1
-    updatedReplicas: 1
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -8266,25 +5573,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 4
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:08:08Z"
-      lastUpdateTime: "2021-05-11T13:10:57Z"
-      message: ReplicaSet "manager-api-deployment-7fdd4b574d" has successfully progressed.
-      reason: NewReplicaSetAvailable
-      status: "True"
-      type: Progressing
-    - lastTransitionTime: "2021-05-11T13:22:30Z"
-      lastUpdateTime: "2021-05-11T13:22:30Z"
-      message: Deployment has minimum availability.
-      reason: MinimumReplicasAvailable
-      status: "True"
-      type: Available
-    observedGeneration: 1
-    readyReplicas: 4
-    replicas: 4
-    updatedReplicas: 4
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -8353,25 +5641,6 @@ items:
         volumes:
         - emptyDir: {}
           name: logs
-  status:
-    availableReplicas: 2
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:08:08Z"
-      lastUpdateTime: "2021-05-11T13:10:59Z"
-      message: ReplicaSet "cleaner-65b97dc747" has successfully progressed.
-      reason: NewReplicaSetAvailable
-      status: "True"
-      type: Progressing
-    - lastTransitionTime: "2021-05-11T13:22:31Z"
-      lastUpdateTime: "2021-05-11T13:22:31Z"
-      message: Deployment has minimum availability.
-      reason: MinimumReplicasAvailable
-      status: "True"
-      type: Available
-    observedGeneration: 1
-    readyReplicas: 2
-    replicas: 2
-    updatedReplicas: 2
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -8426,24 +5695,6 @@ items:
             defaultMode: 420
             name: configmap-web-moon-html
           name: html-volume
-  status:
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:08:08Z"
-      lastUpdateTime: "2021-05-11T13:08:08Z"
-      message: Deployment does not have minimum availability.
-      reason: MinimumReplicasUnavailable
-      status: "False"
-      type: Available
-    - lastTransitionTime: "2021-05-11T13:18:09Z"
-      lastUpdateTime: "2021-05-11T13:18:09Z"
-      message: ReplicaSet "web-moon-7d8564b94" has timed out progressing.
-      reason: ProgressDeadlineExceeded
-      status: "False"
-      type: Progressing
-    observedGeneration: 1
-    replicas: 5
-    unavailableReplicas: 5
-    updatedReplicas: 5
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -8490,26 +5741,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 3
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:22:39Z"
-      lastUpdateTime: "2021-05-11T13:22:39Z"
-      message: Deployment has minimum availability.
-      reason: MinimumReplicasAvailable
-      status: "True"
-      type: Available
-    - lastTransitionTime: "2021-06-17T08:42:00Z"
-      lastUpdateTime: "2021-06-17T08:42:00Z"
-      message: ReplicaSet "api-new-c32-6775dbd89c" has timed out progressing.
-      reason: ProgressDeadlineExceeded
-      status: "False"
-      type: Progressing
-    observedGeneration: 5
-    readyReplicas: 3
-    replicas: 4
-    unavailableReplicas: 1
-    updatedReplicas: 1
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -8574,25 +5805,6 @@ items:
           name: cache-volume2
         - emptyDir: {}
           name: cache-volume3
-  status:
-    availableReplicas: 3
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:08:10Z"
-      lastUpdateTime: "2021-05-11T13:11:06Z"
-      message: ReplicaSet "project-23-api-6b6fbfccd7" has successfully progressed.
-      reason: NewReplicaSetAvailable
-      status: "True"
-      type: Progressing
-    - lastTransitionTime: "2021-05-11T13:22:36Z"
-      lastUpdateTime: "2021-05-11T13:22:36Z"
-      message: Deployment has minimum availability.
-      reason: MinimumReplicasAvailable
-      status: "True"
-      type: Available
-    observedGeneration: 1
-    readyReplicas: 3
-    replicas: 3
-    updatedReplicas: 3
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -8636,25 +5848,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 2
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:08:10Z"
-      lastUpdateTime: "2021-05-11T13:11:16Z"
-      message: ReplicaSet "api-5548866cb5" has successfully progressed.
-      reason: NewReplicaSetAvailable
-      status: "True"
-      type: Progressing
-    - lastTransitionTime: "2021-05-11T13:22:38Z"
-      lastUpdateTime: "2021-05-11T13:22:38Z"
-      message: Deployment has minimum availability.
-      reason: MinimumReplicasAvailable
-      status: "True"
-      type: Available
-    observedGeneration: 1
-    readyReplicas: 2
-    replicas: 2
-    updatedReplicas: 2
 - apiVersion: apps/v1
   kind: Deployment
   metadata:
@@ -8698,25 +5891,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 5
-    conditions:
-    - lastTransitionTime: "2021-05-11T13:08:10Z"
-      lastUpdateTime: "2021-05-11T13:11:27Z"
-      message: ReplicaSet "frontend-5d5658f9d4" has successfully progressed.
-      reason: NewReplicaSetAvailable
-      status: "True"
-      type: Progressing
-    - lastTransitionTime: "2021-05-11T13:22:38Z"
-      lastUpdateTime: "2021-05-11T13:22:38Z"
-      message: Deployment has minimum availability.
-      reason: MinimumReplicasAvailable
-      status: "True"
-      type: Available
-    observedGeneration: 1
-    readyReplicas: 5
-    replicas: 5
-    updatedReplicas: 5
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -8765,12 +5939,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 3
-    fullyLabeledReplicas: 3
-    observedGeneration: 1
-    readyReplicas: 3
-    replicas: 3
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -8819,12 +5987,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 6
-    fullyLabeledReplicas: 6
-    observedGeneration: 1
-    readyReplicas: 6
-    replicas: 6
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -8877,12 +6039,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 3
-    fullyLabeledReplicas: 3
-    observedGeneration: 1
-    readyReplicas: 3
-    replicas: 3
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -8935,12 +6091,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 3
-    fullyLabeledReplicas: 3
-    observedGeneration: 1
-    readyReplicas: 3
-    replicas: 3
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -8997,10 +6147,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    fullyLabeledReplicas: 4
-    observedGeneration: 1
-    replicas: 4
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -9057,9 +6203,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    observedGeneration: 2
-    replicas: 0
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -9108,12 +6251,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 1
-    fullyLabeledReplicas: 1
-    observedGeneration: 1
-    readyReplicas: 1
-    replicas: 1
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -9162,12 +6299,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 4
-    fullyLabeledReplicas: 4
-    observedGeneration: 1
-    readyReplicas: 4
-    replicas: 4
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -9241,12 +6372,6 @@ items:
         volumes:
         - emptyDir: {}
           name: logs
-  status:
-    availableReplicas: 2
-    fullyLabeledReplicas: 2
-    observedGeneration: 1
-    readyReplicas: 2
-    replicas: 2
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -9306,10 +6431,6 @@ items:
             defaultMode: 420
             name: configmap-web-moon-html
           name: html-volume
-  status:
-    fullyLabeledReplicas: 5
-    observedGeneration: 1
-    replicas: 5
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -9359,9 +6480,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    observedGeneration: 2
-    replicas: 0
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -9411,10 +6529,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    fullyLabeledReplicas: 1
-    observedGeneration: 2
-    replicas: 1
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -9463,12 +6577,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 3
-    fullyLabeledReplicas: 3
-    observedGeneration: 1
-    readyReplicas: 3
-    replicas: 3
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -9518,9 +6626,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    observedGeneration: 1
-    replicas: 0
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -9590,12 +6695,6 @@ items:
           name: cache-volume2
         - emptyDir: {}
           name: cache-volume3
-  status:
-    availableReplicas: 3
-    fullyLabeledReplicas: 3
-    observedGeneration: 1
-    readyReplicas: 3
-    replicas: 3
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -9644,12 +6743,6 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 2
-    fullyLabeledReplicas: 2
-    observedGeneration: 1
-    readyReplicas: 2
-    replicas: 2
 - apiVersion: apps/v1
   kind: ReplicaSet
   metadata:
@@ -9698,14 +6791,7 @@ items:
         schedulerName: default-scheduler
         securityContext: {}
         terminationGracePeriodSeconds: 30
-  status:
-    availableReplicas: 5
-    fullyLabeledReplicas: 5
-    observedGeneration: 1
-    readyReplicas: 5
-    replicas: 5
 kind: List
 metadata:
   resourceVersion: ""
   selfLink: ""
----
