@@ -1,0 +1,232 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2021-06-19T05:57:03Z"
+    labels:
+      kubernetes.io/metadata.name: default
+    name: default
+    resourceVersion: "204"
+    uid: 2e018dcf-9585-452b-8508-721b8ad34f6e
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"name":"earth"}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    labels:
+      kubernetes.io/metadata.name: earth
+    name: earth
+    resourceVersion: "1189"
+    uid: 3777373d-bbd8-46a7-8f3f-b87e5baa2ca0
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"name":"jupiter"}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    labels:
+      kubernetes.io/metadata.name: jupiter
+    name: jupiter
+    resourceVersion: "1190"
+    uid: d6439f22-e15d-4a37-b57f-b9298ac0264b
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2021-06-19T05:57:02Z"
+    labels:
+      kubernetes.io/metadata.name: kube-node-lease
+    name: kube-node-lease
+    resourceVersion: "6"
+    uid: 48f9b55b-f4ef-4b7d-a73a-58fe5ce334d3
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2021-06-19T05:57:02Z"
+    labels:
+      kubernetes.io/metadata.name: kube-public
+    name: kube-public
+    resourceVersion: "5"
+    uid: 42647103-1cc3-4177-a673-c9e5603487fb
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    creationTimestamp: "2021-06-19T05:57:02Z"
+    labels:
+      kubernetes.io/metadata.name: kube-system
+    name: kube-system
+    resourceVersion: "4"
+    uid: 821c5a9b-aa56-4fbe-9c43-6dcaea818681
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"name":"mars"}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    labels:
+      kubernetes.io/metadata.name: mars
+    name: mars
+    resourceVersion: "1195"
+    uid: f04343f5-55bd-4ff1-ad99-d521e0442b38
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"name":"mercury"}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    labels:
+      kubernetes.io/metadata.name: mercury
+    name: mercury
+    resourceVersion: "1202"
+    uid: 508a99c5-17e9-453c-aaff-a82f99335c8d
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"name":"moon"}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    labels:
+      kubernetes.io/metadata.name: moon
+    name: moon
+    resourceVersion: "1207"
+    uid: f2712791-6b7f-4999-b5b2-f03c8c43c888
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"name":"neptune"}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    labels:
+      kubernetes.io/metadata.name: neptune
+    name: neptune
+    resourceVersion: "1212"
+    uid: 7a257e3f-9ff8-4e55-96ec-a961dbe8b135
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"name":"pluto"}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    labels:
+      kubernetes.io/metadata.name: pluto
+    name: pluto
+    resourceVersion: "1217"
+    uid: 6264e774-0737-4a68-9c42-1261c867e522
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"name":"saturn"}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    labels:
+      kubernetes.io/metadata.name: saturn
+    name: saturn
+    resourceVersion: "1223"
+    uid: e5effbd1-6ac5-4259-8957-aa457e59ece8
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"name":"sun"}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    labels:
+      kubernetes.io/metadata.name: sun
+    name: sun
+    resourceVersion: "1228"
+    uid: c832af4f-cb6e-4aff-b1c9-281bf3895428
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+- apiVersion: v1
+  kind: Namespace
+  metadata:
+    annotations:
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"v1","kind":"Namespace","metadata":{"annotations":{},"name":"venus"}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    labels:
+      kubernetes.io/metadata.name: venus
+    name: venus
+    resourceVersion: "1233"
+    uid: 1ef999bd-c555-47f2-8b2e-0c2bb43b16b8
+  spec:
+    finalizers:
+    - kubernetes
+  status:
+    phase: Active
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""

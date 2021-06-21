@@ -1,0 +1,499 @@
+apiVersion: v1
+items:
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 192.168.49.2
+    conditions:
+      ready: true
+  kind: EndpointSlice
+  metadata:
+    creationTimestamp: "2021-06-19T05:57:03Z"
+    generation: 1
+    labels:
+      kubernetes.io/service-name: kubernetes
+    name: kubernetes
+    namespace: default
+    resourceVersion: "209"
+    uid: 04e3b533-a099-4db6-bbf7-3cbb73655455
+  ports:
+  - name: https
+    port: 8443
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 172.17.0.24
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-2x3-api-686fc9cb8f-xr9xr
+      namespace: earth
+      resourceVersion: "2053"
+      uid: 9cac3514-caeb-4e5d-8e43-e2fe22028a06
+  - addresses:
+    - 172.17.0.29
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-2x3-api-686fc9cb8f-ws82x
+      namespace: earth
+      resourceVersion: "2103"
+      uid: 25217208-8d7d-4bc2-8fa5-4e642d4ff706
+  - addresses:
+    - 172.17.0.30
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-2x3-api-686fc9cb8f-pnqnl
+      namespace: earth
+      resourceVersion: "2116"
+      uid: bba76961-d358-4be5-8e7a-874cd1023fae
+  kind: EndpointSlice
+  metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2021-06-21T02:31:58Z"
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generateName: earth-2x3-api-svc-
+    generation: 4
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      id: earth-2x3-api-svc
+      kubernetes.io/service-name: earth-2x3-api-svc
+    name: earth-2x3-api-svc-d52px
+    namespace: earth
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: earth-2x3-api-svc
+      uid: 0c4d4684-25ec-45e5-b321-8f769871af51
+    resourceVersion: "2117"
+    uid: 8605dc69-cf37-4700-9ed4-6d8242ec5413
+  ports:
+  - name: 4546-80
+    port: 80
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 172.17.0.28
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-2x3-web-569bc6cdb7-92t2f
+      namespace: earth
+      resourceVersion: "2089"
+      uid: 0734d918-89fe-4561-95c0-fd2137d9f1b8
+  - addresses:
+    - 172.17.0.32
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-2x3-web-569bc6cdb7-gvgqm
+      namespace: earth
+      resourceVersion: "2137"
+      uid: f10670ab-a358-4b14-9d29-18edfacc63cc
+  - addresses:
+    - 172.17.0.34
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-2x3-web-569bc6cdb7-68s9j
+      namespace: earth
+      resourceVersion: "2154"
+      uid: 71fa242f-b181-4773-b4c7-0c1d8fafdf25
+  - addresses:
+    - 172.17.0.37
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-2x3-web-569bc6cdb7-wdnjf
+      namespace: earth
+      resourceVersion: "2182"
+      uid: 4b889b14-ead9-4b0c-9a91-e287a2bedfa1
+  - addresses:
+    - 172.17.0.38
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-2x3-web-569bc6cdb7-w8kg8
+      namespace: earth
+      resourceVersion: "2194"
+      uid: 1d17dc64-6b62-40e9-804b-51b8bdf3b74b
+  - addresses:
+    - 172.17.0.40
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-2x3-web-569bc6cdb7-mqlzp
+      namespace: earth
+      resourceVersion: "2212"
+      uid: 16b39603-0a55-47c1-bc30-5b5e879e3ece
+  kind: EndpointSlice
+  metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2021-06-21T02:32:36Z"
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generateName: earth-2x3-web-svc-
+    generation: 7
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      id: earth-2x3-web-svc
+      kubernetes.io/service-name: earth-2x3-web-svc
+    name: earth-2x3-web-svc-kcttf
+    namespace: earth
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: earth-2x3-web-svc
+      uid: 54024816-16bf-4b79-8d25-c812a78da13c
+    resourceVersion: "2214"
+    uid: f13f63c8-0a04-442b-b252-334c09d881bc
+  ports:
+  - name: 4545-80
+    port: 80
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 172.17.0.42
+    conditions:
+      ready: false
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-3cc-web-789c6dddc7-vc2f2
+      namespace: earth
+      resourceVersion: "2231"
+      uid: c76287ab-73d0-4dcf-ac0b-dc1ed8503983
+  - addresses:
+    - 172.17.0.43
+    conditions:
+      ready: false
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-3cc-web-789c6dddc7-bf8hf
+      namespace: earth
+      resourceVersion: "2239"
+      uid: 00813324-ed52-46c5-870c-9f4fac4ca23b
+  - addresses:
+    - 172.17.0.44
+    conditions:
+      ready: false
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-3cc-web-789c6dddc7-h9ths
+      namespace: earth
+      resourceVersion: "2251"
+      uid: 53d63452-7dd0-498e-aef3-57e186eca32d
+  - addresses:
+    - 172.17.0.45
+    conditions:
+      ready: false
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: earth-3cc-web-789c6dddc7-wfgtt
+      namespace: earth
+      resourceVersion: "2263"
+      uid: 545043f0-4c3d-4cf8-8103-74e83306ff00
+  kind: EndpointSlice
+  metadata:
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generateName: earth-3cc-web-
+    generation: 5
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      id: earth-3cc-web
+      kubernetes.io/service-name: earth-3cc-web
+    name: earth-3cc-web-k8hd2
+    namespace: earth
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: earth-3cc-web
+      uid: d342f0e4-32a0-4faf-b613-c421772f8064
+    resourceVersion: "2265"
+    uid: 12886ed6-a9e0-4168-b8a4-a95a0b3cd904
+  ports:
+  - name: 6363-80
+    port: 80
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 172.17.0.49
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: jupiter-crew-deploy-6785c47f64-rstg5
+      namespace: jupiter
+      resourceVersion: "2308"
+      uid: fd8388f2-38cc-4344-9f67-00a9bc54de25
+  kind: EndpointSlice
+  metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2021-06-21T02:33:26Z"
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generateName: jupiter-crew-svc-
+    generation: 2
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      kubernetes.io/service-name: jupiter-crew-svc
+    name: jupiter-crew-svc-24fkq
+    namespace: jupiter
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: jupiter-crew-svc
+      uid: 258937a4-382c-4bd4-bed3-4d6ca9d7b27b
+    resourceVersion: "2309"
+    uid: 0d187ff6-6336-4b36-bd1d-64acfef32f29
+  ports:
+  - name: 8080-80
+    port: 80
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 172.17.0.2
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: coredns-558bd4d5db-cw84c
+      namespace: kube-system
+      resourceVersion: "1183"
+      uid: a99dcc20-6039-475a-b371-83bccf6b2dea
+  kind: EndpointSlice
+  metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2021-06-21T02:29:32Z"
+    creationTimestamp: "2021-06-19T05:57:24Z"
+    generateName: kube-dns-
+    generation: 5
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      k8s-app: kube-dns
+      kubernetes.io/cluster-service: "true"
+      kubernetes.io/name: CoreDNS
+      kubernetes.io/service-name: kube-dns
+    name: kube-dns-bs97m
+    namespace: kube-system
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: kube-dns
+      uid: 148c85af-c4a3-4518-820d-f9c746dd8cf5
+    resourceVersion: "1186"
+    uid: 15bd4d22-7e08-4be8-aad0-d92f57277fd0
+  ports:
+  - name: metrics
+    port: 9153
+    protocol: TCP
+  - name: dns
+    port: 53
+    protocol: UDP
+  - name: dns-tcp
+    port: 53
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints: null
+  kind: EndpointSlice
+  metadata:
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generateName: manager-api-svc-
+    generation: 1
+    labels:
+      app: manager-api-svc
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      kubernetes.io/service-name: manager-api-svc
+    name: manager-api-svc-qstt5
+    namespace: mars
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: manager-api-svc
+      uid: 78340075-5507-43a9-b21b-72b92f9b7b60
+    resourceVersion: "1500"
+    uid: e4a89a5c-f3d5-45d0-8462-69cf29f74bb0
+  ports: null
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 172.17.0.56
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: api-5548866cb5-md92j
+      namespace: venus
+      resourceVersion: "2367"
+      uid: 7bc1b2b7-1201-4911-84d7-cc9b312e8682
+  - addresses:
+    - 172.17.0.64
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: api-5548866cb5-b4xq4
+      namespace: venus
+      resourceVersion: "2378"
+      uid: b712599b-e96b-410c-bfcf-475508c8a86d
+  kind: EndpointSlice
+  metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2021-06-21T02:33:51Z"
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generateName: api-
+    generation: 3
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      kubernetes.io/service-name: api
+    name: api-ck8w4
+    namespace: venus
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: api
+      uid: 095cdb59-a54f-4ebb-9342-4fb8885ec9ee
+    resourceVersion: "2382"
+    uid: cdfd5153-3f6c-468b-ad4b-70db404284a8
+  ports:
+  - name: 2222-80
+    port: 80
+    protocol: TCP
+- addressType: IPv4
+  apiVersion: discovery.k8s.io/v1
+  endpoints:
+  - addresses:
+    - 172.17.0.59
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: frontend-5d5658f9d4-6vssc
+      namespace: venus
+      resourceVersion: "1894"
+      uid: 12ad68c2-f8bb-41d0-9c8a-8698ab383e87
+  - addresses:
+    - 172.17.0.57
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: frontend-5d5658f9d4-vt9rs
+      namespace: venus
+      resourceVersion: "1900"
+      uid: dc77de93-2a8c-4b05-b3b9-3d1111f99b68
+  - addresses:
+    - 172.17.0.61
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: frontend-5d5658f9d4-dqtng
+      namespace: venus
+      resourceVersion: "1910"
+      uid: bb1cb0bf-5dc0-49f7-8b2f-dea1300781c7
+  - addresses:
+    - 172.17.0.58
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: frontend-5d5658f9d4-pvz9k
+      namespace: venus
+      resourceVersion: "1921"
+      uid: 60f26d48-6152-4ccf-82ec-0cea3a856164
+  - addresses:
+    - 172.17.0.60
+    conditions:
+      ready: true
+    nodeName: minikube
+    targetRef:
+      kind: Pod
+      name: frontend-5d5658f9d4-r4x56
+      namespace: venus
+      resourceVersion: "1926"
+      uid: 7ebfc5d1-54df-44e7-91f8-a1f8c3262065
+  kind: EndpointSlice
+  metadata:
+    annotations:
+      endpoints.kubernetes.io/last-change-trigger-time: "2021-06-21T02:29:55Z"
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generateName: frontend-
+    generation: 6
+    labels:
+      endpointslice.kubernetes.io/managed-by: endpointslice-controller.k8s.io
+      kubernetes.io/service-name: frontend
+    name: frontend-9z79g
+    namespace: venus
+    ownerReferences:
+    - apiVersion: v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Service
+      name: frontend
+      uid: 5375d33c-a7bc-4074-bc83-ee80fe8f709d
+    resourceVersion: "1928"
+    uid: 7d4a69de-7553-4440-a4b3-20552a51c4f7
+  ports:
+  - name: "80"
+    port: 80
+    protocol: TCP
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""

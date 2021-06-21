@@ -1,0 +1,899 @@
+apiVersion: v1
+items:
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "3"
+      deployment.kubernetes.io/max-replicas: "4"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    labels:
+      id: earth-2x3-api
+      pod-template-hash: 686fc9cb8f
+    name: earth-2x3-api-686fc9cb8f
+    namespace: earth
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: earth-2x3-api
+      uid: a4d33e85-1334-4cc5-9409-e362ff883cdf
+    resourceVersion: "2119"
+    uid: 4b225298-56f1-4967-a2f3-c64debb9851c
+  spec:
+    replicas: 3
+    selector:
+      matchLabels:
+        id: earth-2x3-api
+        pod-template-hash: 686fc9cb8f
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: earth-2x3-api
+          pod-template-hash: 686fc9cb8f
+      spec:
+        containers:
+        - image: httpd:2.4-alpine
+          imagePullPolicy: IfNotPresent
+          name: api
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 3
+    fullyLabeledReplicas: 3
+    observedGeneration: 1
+    readyReplicas: 3
+    replicas: 3
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "6"
+      deployment.kubernetes.io/max-replicas: "8"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    labels:
+      id: earth-2x3-web
+      pod-template-hash: 569bc6cdb7
+    name: earth-2x3-web-569bc6cdb7
+    namespace: earth
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: earth-2x3-web
+      uid: 55533516-a028-4f04-8369-3e128fc0d14c
+    resourceVersion: "2213"
+    uid: c71bbeeb-17c0-4a2d-a497-1ad45940937d
+  spec:
+    replicas: 6
+    selector:
+      matchLabels:
+        id: earth-2x3-web
+        pod-template-hash: 569bc6cdb7
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: earth-2x3-web
+          pod-template-hash: 569bc6cdb7
+      spec:
+        containers:
+        - image: httpd:2.4-alpine
+          imagePullPolicy: IfNotPresent
+          name: httpd
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 6
+    fullyLabeledReplicas: 6
+    observedGeneration: 1
+    readyReplicas: 6
+    replicas: 6
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "3"
+      deployment.kubernetes.io/max-replicas: "4"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    labels:
+      id: earth-3cc-runner
+      pod-template-hash: 6cb7f77c44
+    name: earth-3cc-runner-6cb7f77c44
+    namespace: earth
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: earth-3cc-runner
+      uid: 85d90c88-a0e4-4ea1-9031-9d8702c68a3d
+    resourceVersion: "2224"
+    uid: 1a771740-46cf-4da9-bc42-2dd60f83dd0e
+  spec:
+    replicas: 3
+    selector:
+      matchLabels:
+        id: earth-3cc-runner
+        pod-template-hash: 6cb7f77c44
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: earth-3cc-runner
+          pod-template-hash: 6cb7f77c44
+      spec:
+        containers:
+        - args:
+          - sh
+          - -c
+          - sleep 2d
+          image: python:3.7.4-alpine3.9
+          imagePullPolicy: IfNotPresent
+          name: python
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 3
+    fullyLabeledReplicas: 3
+    observedGeneration: 1
+    readyReplicas: 3
+    replicas: 3
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "3"
+      deployment.kubernetes.io/max-replicas: "4"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    labels:
+      id: earth-3cc-runner-heavy
+      pod-template-hash: 5f95d75b54
+    name: earth-3cc-runner-heavy-5f95d75b54
+    namespace: earth
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: earth-3cc-runner-heavy
+      uid: 0768f3c7-d0d5-48f8-9ebc-6ad7b051171d
+    resourceVersion: "2204"
+    uid: 8f62fd54-84dd-49d4-be7c-0bd4e634cabc
+  spec:
+    replicas: 3
+    selector:
+      matchLabels:
+        id: earth-3cc-runner-heavy
+        pod-template-hash: 5f95d75b54
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: earth-3cc-runner-heavy
+          pod-template-hash: 5f95d75b54
+      spec:
+        containers:
+        - args:
+          - sh
+          - -c
+          - sleep 2d
+          image: python:3.7.4-alpine3.9
+          imagePullPolicy: IfNotPresent
+          name: python
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 3
+    fullyLabeledReplicas: 3
+    observedGeneration: 1
+    readyReplicas: 3
+    replicas: 3
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "4"
+      deployment.kubernetes.io/max-replicas: "4"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    labels:
+      id: earth-3cc-web
+      pod-template-hash: 789c6dddc7
+    name: earth-3cc-web-789c6dddc7
+    namespace: earth
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: earth-3cc-web
+      uid: 5df1cecc-38f8-483d-bb4a-c9f8cf896290
+    resourceVersion: "1579"
+    uid: 2303690e-f16f-48b1-b2ac-773f7eca0a60
+  spec:
+    replicas: 4
+    selector:
+      matchLabels:
+        id: earth-3cc-web
+        pod-template-hash: 789c6dddc7
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: earth-3cc-web
+          pod-template-hash: 789c6dddc7
+      spec:
+        containers:
+        - image: nginx:1.16.1-alpine
+          imagePullPolicy: IfNotPresent
+          name: nginx
+          readinessProbe:
+            failureThreshold: 3
+            initialDelaySeconds: 10
+            periodSeconds: 20
+            successThreshold: 1
+            tcpSocket:
+              port: 82
+            timeoutSeconds: 1
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    fullyLabeledReplicas: 4
+    observedGeneration: 1
+    replicas: 4
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "1"
+      deployment.kubernetes.io/max-replicas: "2"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    labels:
+      id: jupiter-crew
+      pod-template-hash: 6785c47f64
+    name: jupiter-crew-deploy-6785c47f64
+    namespace: jupiter
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: jupiter-crew-deploy
+      uid: db2468af-8dcb-4176-9b4a-90078960eebb
+    resourceVersion: "2311"
+    uid: d102966b-1e1b-42d4-a5c9-ad8a8833e806
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        id: jupiter-crew
+        pod-template-hash: 6785c47f64
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: jupiter-crew
+          pod-template-hash: 6785c47f64
+      spec:
+        containers:
+        - image: httpd:2.4.41-alpine
+          imagePullPolicy: IfNotPresent
+          name: apache
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 1
+    fullyLabeledReplicas: 1
+    observedGeneration: 1
+    readyReplicas: 1
+    replicas: 1
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "1"
+      deployment.kubernetes.io/max-replicas: "2"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-19T05:57:24Z"
+    generation: 1
+    labels:
+      k8s-app: kube-dns
+      pod-template-hash: 558bd4d5db
+    name: coredns-558bd4d5db
+    namespace: kube-system
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: coredns
+      uid: ac729aef-9dac-4e71-91a9-1f813d85d235
+    resourceVersion: "1184"
+    uid: 3bbf81bf-1288-4dee-87f5-2717e093bf0a
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        k8s-app: kube-dns
+        pod-template-hash: 558bd4d5db
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          k8s-app: kube-dns
+          pod-template-hash: 558bd4d5db
+      spec:
+        containers:
+        - args:
+          - -conf
+          - /etc/coredns/Corefile
+          image: k8s.gcr.io/coredns/coredns:v1.8.0
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 5
+            httpGet:
+              path: /health
+              port: 8080
+              scheme: HTTP
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 5
+          name: coredns
+          ports:
+          - containerPort: 53
+            name: dns
+            protocol: UDP
+          - containerPort: 53
+            name: dns-tcp
+            protocol: TCP
+          - containerPort: 9153
+            name: metrics
+            protocol: TCP
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /ready
+              port: 8181
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            limits:
+              memory: 170Mi
+            requests:
+              cpu: 100m
+              memory: 70Mi
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              add:
+              - NET_BIND_SERVICE
+              drop:
+              - all
+            readOnlyRootFilesystem: true
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /etc/coredns
+            name: config-volume
+            readOnly: true
+        dnsPolicy: Default
+        nodeSelector:
+          kubernetes.io/os: linux
+        priorityClassName: system-cluster-critical
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        serviceAccount: coredns
+        serviceAccountName: coredns
+        terminationGracePeriodSeconds: 30
+        tolerations:
+        - key: CriticalAddonsOnly
+          operator: Exists
+        - effect: NoSchedule
+          key: node-role.kubernetes.io/master
+        - effect: NoSchedule
+          key: node-role.kubernetes.io/control-plane
+        volumes:
+        - configMap:
+            defaultMode: 420
+            items:
+            - key: Corefile
+              path: Corefile
+            name: coredns
+          name: config-volume
+  status:
+    availableReplicas: 1
+    fullyLabeledReplicas: 1
+    observedGeneration: 1
+    readyReplicas: 1
+    replicas: 1
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "4"
+      deployment.kubernetes.io/max-replicas: "5"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    labels:
+      id: manager-api-pod
+      pod-template-hash: 7fdd4b574d
+    name: manager-api-deployment-7fdd4b574d
+    namespace: mars
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: manager-api-deployment
+      uid: d9b08c26-989e-482c-9d69-898048b8ef1a
+    resourceVersion: "1919"
+    uid: fcf12b1a-187d-4518-bcaa-476f03c02e64
+  spec:
+    replicas: 4
+    selector:
+      matchLabels:
+        id: manager-api-pod
+        pod-template-hash: 7fdd4b574d
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: manager-api-pod
+          pod-template-hash: 7fdd4b574d
+      spec:
+        containers:
+        - image: nginx:1.17.3-alpine
+          imagePullPolicy: IfNotPresent
+          name: nginx
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 4
+    fullyLabeledReplicas: 4
+    observedGeneration: 1
+    readyReplicas: 4
+    replicas: 4
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "2"
+      deployment.kubernetes.io/max-replicas: "3"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-21T02:29:37Z"
+    generation: 1
+    labels:
+      id: cleaner
+      pod-template-hash: 65b97dc747
+    name: cleaner-65b97dc747
+    namespace: mercury
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: cleaner
+      uid: ec768109-4ebd-4c5b-9179-879968e80647
+    resourceVersion: "2358"
+    uid: c3b7f441-f520-4a89-88f7-6e6f519f9a49
+  spec:
+    replicas: 2
+    selector:
+      matchLabels:
+        id: cleaner
+        pod-template-hash: 65b97dc747
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: cleaner
+          pod-template-hash: 65b97dc747
+      spec:
+        containers:
+        - args:
+          - bash
+          - -c
+          - 'while true; do echo `date`: "remove random file" >> /var/log/cleaner/cleaner.log;
+            sleep 1; done'
+          image: bash:5.0.11
+          imagePullPolicy: IfNotPresent
+          name: cleaner-con
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /var/log/cleaner
+            name: logs
+        dnsPolicy: ClusterFirst
+        initContainers:
+        - command:
+          - bash
+          - -c
+          - echo init > /var/log/cleaner/cleaner.log
+          image: bash:5.0.11
+          imagePullPolicy: IfNotPresent
+          name: init
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /var/log/cleaner
+            name: logs
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - emptyDir: {}
+          name: logs
+  status:
+    availableReplicas: 2
+    fullyLabeledReplicas: 2
+    observedGeneration: 1
+    readyReplicas: 2
+    replicas: 2
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "5"
+      deployment.kubernetes.io/max-replicas: "7"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-21T02:29:37Z"
+    generation: 1
+    labels:
+      id: web-moon
+      pod-template-hash: 7d8564b94
+    name: web-moon-7d8564b94
+    namespace: moon
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: web-moon
+      uid: 7088694b-59f5-4cef-8343-4f94cc99db9a
+    resourceVersion: "1603"
+    uid: 03cb4d8a-8400-4d8b-bc54-82caec3025a5
+  spec:
+    replicas: 5
+    selector:
+      matchLabels:
+        id: web-moon
+        pod-template-hash: 7d8564b94
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: web-moon
+          pod-template-hash: 7d8564b94
+      spec:
+        containers:
+        - image: nginx:1.17.3-alpine
+          imagePullPolicy: IfNotPresent
+          name: nginx
+          ports:
+          - containerPort: 80
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /usr/share/nginx/html
+            name: html-volume
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - configMap:
+            defaultMode: 420
+            name: configmap-web-moon-html
+          name: html-volume
+  status:
+    fullyLabeledReplicas: 5
+    observedGeneration: 1
+    replicas: 5
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "3"
+      deployment.kubernetes.io/max-replicas: "4"
+      deployment.kubernetes.io/revision: "1"
+      kubernetes.io/change-cause: kubectl edit deployment api-new-c32 --namespace=neptune
+    creationTimestamp: "2021-06-21T02:29:37Z"
+    generation: 1
+    labels:
+      id: api-new-c32
+      pod-template-hash: 6775dbd89c
+    name: api-new-c32-6775dbd89c
+    namespace: neptune
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: api-new-c32
+      uid: cc4d8b9b-dfd4-4f99-9350-650e3368f72a
+    resourceVersion: "1601"
+    uid: 8150376d-0c08-4ed5-83f7-079a3526b061
+  spec:
+    replicas: 3
+    selector:
+      matchLabels:
+        id: api-new-c32
+        pod-template-hash: 6775dbd89c
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: api-new-c32
+          pod-template-hash: 6775dbd89c
+      spec:
+        containers:
+        - image: ngnix:1.16.3
+          imagePullPolicy: IfNotPresent
+          name: nginx
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    fullyLabeledReplicas: 3
+    observedGeneration: 1
+    replicas: 3
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "3"
+      deployment.kubernetes.io/max-replicas: "4"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-21T02:29:37Z"
+    generation: 1
+    labels:
+      app: project-23-api
+      pod-template-hash: 6b6fbfccd7
+    name: project-23-api-6b6fbfccd7
+    namespace: pluto
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: project-23-api
+      uid: 3969b936-78af-488f-bfb1-785fc041c401
+    resourceVersion: "2290"
+    uid: 03c39f4b-1732-4188-bfea-499c8ede69c2
+  spec:
+    replicas: 3
+    selector:
+      matchLabels:
+        app: project-23-api
+        pod-template-hash: 6b6fbfccd7
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          app: project-23-api
+          pod-template-hash: 6b6fbfccd7
+      spec:
+        containers:
+        - env:
+          - name: APP_ENV
+            value: prod
+          - name: APP_SECRET_N1
+            value: IO=a4L/XkRdvN8jM=Y+
+          - name: APP_SECRET_P1
+            value: -7PA0_Z]>{pwa43r)__
+          image: httpd:2.4-alpine
+          imagePullPolicy: IfNotPresent
+          name: httpd
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /cache1
+            name: cache-volume1
+          - mountPath: /cache2
+            name: cache-volume2
+          - mountPath: /cache3
+            name: cache-volume3
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - emptyDir: {}
+          name: cache-volume1
+        - emptyDir: {}
+          name: cache-volume2
+        - emptyDir: {}
+          name: cache-volume3
+  status:
+    availableReplicas: 3
+    fullyLabeledReplicas: 3
+    observedGeneration: 1
+    readyReplicas: 3
+    replicas: 3
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "2"
+      deployment.kubernetes.io/max-replicas: "3"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-21T02:29:37Z"
+    generation: 1
+    labels:
+      id: api
+      pod-template-hash: 5548866cb5
+    name: api-5548866cb5
+    namespace: venus
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: api
+      uid: 4416c993-e69b-4124-92dc-ff4e3621b132
+    resourceVersion: "2379"
+    uid: 7e6fa26c-b9c2-4363-a4b4-0f1fc06e40bc
+  spec:
+    replicas: 2
+    selector:
+      matchLabels:
+        id: api
+        pod-template-hash: 5548866cb5
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: api
+          pod-template-hash: 5548866cb5
+      spec:
+        containers:
+        - image: httpd:2.4.41-alpine
+          imagePullPolicy: IfNotPresent
+          name: python
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 2
+    fullyLabeledReplicas: 2
+    observedGeneration: 1
+    readyReplicas: 2
+    replicas: 2
+- apiVersion: apps/v1
+  kind: ReplicaSet
+  metadata:
+    annotations:
+      deployment.kubernetes.io/desired-replicas: "5"
+      deployment.kubernetes.io/max-replicas: "7"
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-21T02:29:38Z"
+    generation: 1
+    labels:
+      id: frontend
+      pod-template-hash: 5d5658f9d4
+    name: frontend-5d5658f9d4
+    namespace: venus
+    ownerReferences:
+    - apiVersion: apps/v1
+      blockOwnerDeletion: true
+      controller: true
+      kind: Deployment
+      name: frontend
+      uid: b6078322-0827-4fa2-b554-dbef3eecac42
+    resourceVersion: "1929"
+    uid: f7339aa6-bdda-4246-8e88-908aefb5a128
+  spec:
+    replicas: 5
+    selector:
+      matchLabels:
+        id: frontend
+        pod-template-hash: 5d5658f9d4
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: frontend
+          pod-template-hash: 5d5658f9d4
+      spec:
+        containers:
+        - image: nginx:1.17.3-alpine
+          imagePullPolicy: IfNotPresent
+          name: nginx
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 5
+    fullyLabeledReplicas: 5
+    observedGeneration: 1
+    readyReplicas: 5
+    replicas: 5
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""

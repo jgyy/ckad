@@ -1,0 +1,1023 @@
+apiVersion: v1
+items:
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"1"},"creationTimestamp":"2021-05-11T13:08:05Z","generation":1,"labels":{"id":"earth-2x3-api"},"name":"earth-2x3-api","namespace":"earth","resourceVersion":"4780","uid":"3a1f812f-2b4a-4f91-b66b-da93d68f7b74"},"spec":{"progressDeadlineSeconds":600,"replicas":3,"revisionHistoryLimit":10,"selector":{"matchLabels":{"id":"earth-2x3-api"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"id":"earth-2x3-api"}},"spec":{"containers":[{"image":"httpd:2.4-alpine","imagePullPolicy":"IfNotPresent","name":"api","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File"}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30}}}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    labels:
+      id: earth-2x3-api
+    name: earth-2x3-api
+    namespace: earth
+    resourceVersion: "2120"
+    uid: a4d33e85-1334-4cc5-9409-e362ff883cdf
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 3
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        id: earth-2x3-api
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: earth-2x3-api
+      spec:
+        containers:
+        - image: httpd:2.4-alpine
+          imagePullPolicy: IfNotPresent
+          name: api
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 3
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:31:58Z"
+      lastUpdateTime: "2021-06-21T02:31:58Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:29:36Z"
+      lastUpdateTime: "2021-06-21T02:31:58Z"
+      message: ReplicaSet "earth-2x3-api-686fc9cb8f" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    readyReplicas: 3
+    replicas: 3
+    updatedReplicas: 3
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"1"},"creationTimestamp":"2021-05-11T13:08:05Z","generation":1,"name":"earth-2x3-web","namespace":"earth","resourceVersion":"4827","uid":"f57c54d7-89be-49ee-8100-c5edf87c075b"},"spec":{"progressDeadlineSeconds":600,"replicas":6,"revisionHistoryLimit":10,"selector":{"matchLabels":{"id":"earth-2x3-web"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"id":"earth-2x3-web"}},"spec":{"containers":[{"image":"httpd:2.4-alpine","imagePullPolicy":"IfNotPresent","name":"httpd","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File"}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30}}}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    name: earth-2x3-web
+    namespace: earth
+    resourceVersion: "2216"
+    uid: 55533516-a028-4f04-8369-3e128fc0d14c
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 6
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        id: earth-2x3-web
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: earth-2x3-web
+      spec:
+        containers:
+        - image: httpd:2.4-alpine
+          imagePullPolicy: IfNotPresent
+          name: httpd
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 6
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:32:29Z"
+      lastUpdateTime: "2021-06-21T02:32:29Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:29:36Z"
+      lastUpdateTime: "2021-06-21T02:32:36Z"
+      message: ReplicaSet "earth-2x3-web-569bc6cdb7" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    readyReplicas: 6
+    replicas: 6
+    updatedReplicas: 6
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"1"},"creationTimestamp":"2021-05-11T13:08:06Z","generation":1,"labels":{"tag":"light","type":"runner"},"name":"earth-3cc-runner","namespace":"earth","resourceVersion":"4755","uid":"01835fd1-5313-40de-9625-3d06882ace52"},"spec":{"progressDeadlineSeconds":600,"replicas":3,"revisionHistoryLimit":10,"selector":{"matchLabels":{"id":"earth-3cc-runner"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"id":"earth-3cc-runner"}},"spec":{"containers":[{"args":["sh","-c","sleep 2d"],"image":"python:3.7.4-alpine3.9","imagePullPolicy":"IfNotPresent","name":"python","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File"}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30}}}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    labels:
+      tag: light
+      type: runner
+    name: earth-3cc-runner
+    namespace: earth
+    resourceVersion: "2225"
+    uid: 85d90c88-a0e4-4ea1-9031-9d8702c68a3d
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 3
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        id: earth-3cc-runner
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: earth-3cc-runner
+      spec:
+        containers:
+        - args:
+          - sh
+          - -c
+          - sleep 2d
+          image: python:3.7.4-alpine3.9
+          imagePullPolicy: IfNotPresent
+          name: python
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 3
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:32:39Z"
+      lastUpdateTime: "2021-06-21T02:32:39Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:29:36Z"
+      lastUpdateTime: "2021-06-21T02:32:39Z"
+      message: ReplicaSet "earth-3cc-runner-6cb7f77c44" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    readyReplicas: 3
+    replicas: 3
+    updatedReplicas: 3
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"1"},"creationTimestamp":"2021-05-11T13:08:05Z","generation":1,"labels":{"tag":"heavy","type":"runner"},"name":"earth-3cc-runner-heavy","namespace":"earth","resourceVersion":"4822","uid":"9695bda8-360d-4695-a095-59ef0021f587"},"spec":{"progressDeadlineSeconds":600,"replicas":3,"revisionHistoryLimit":10,"selector":{"matchLabels":{"id":"earth-3cc-runner-heavy"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"id":"earth-3cc-runner-heavy"}},"spec":{"containers":[{"args":["sh","-c","sleep 2d"],"image":"python:3.7.4-alpine3.9","imagePullPolicy":"IfNotPresent","name":"python","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File"}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30}}}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    labels:
+      tag: heavy
+      type: runner
+    name: earth-3cc-runner-heavy
+    namespace: earth
+    resourceVersion: "2205"
+    uid: 0768f3c7-d0d5-48f8-9ebc-6ad7b051171d
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 3
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        id: earth-3cc-runner-heavy
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: earth-3cc-runner-heavy
+      spec:
+        containers:
+        - args:
+          - sh
+          - -c
+          - sleep 2d
+          image: python:3.7.4-alpine3.9
+          imagePullPolicy: IfNotPresent
+          name: python
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 3
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:32:32Z"
+      lastUpdateTime: "2021-06-21T02:32:32Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:29:36Z"
+      lastUpdateTime: "2021-06-21T02:32:32Z"
+      message: ReplicaSet "earth-3cc-runner-heavy-5f95d75b54" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    readyReplicas: 3
+    replicas: 3
+    updatedReplicas: 3
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"2"},"creationTimestamp":"2021-05-11T13:08:06Z","generation":3,"name":"earth-3cc-web","namespace":"earth","resourceVersion":"4041","uid":"d8f2c999-44cc-4f0e-bd97-6c9fba7e7a9c"},"spec":{"progressDeadlineSeconds":600,"replicas":4,"revisionHistoryLimit":10,"selector":{"matchLabels":{"id":"earth-3cc-web"}},"strategy":{"type":"Recreate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"id":"earth-3cc-web"}},"spec":{"containers":[{"image":"nginx:1.16.1-alpine","imagePullPolicy":"IfNotPresent","name":"nginx","readinessProbe":{"failureThreshold":3,"initialDelaySeconds":10,"periodSeconds":20,"successThreshold":1,"tcpSocket":{"port":82},"timeoutSeconds":1},"resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File"}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30}}}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    name: earth-3cc-web
+    namespace: earth
+    resourceVersion: "2818"
+    uid: 5df1cecc-38f8-483d-bb4a-c9f8cf896290
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 4
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        id: earth-3cc-web
+    strategy:
+      type: Recreate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: earth-3cc-web
+      spec:
+        containers:
+        - image: nginx:1.16.1-alpine
+          imagePullPolicy: IfNotPresent
+          name: nginx
+          readinessProbe:
+            failureThreshold: 3
+            initialDelaySeconds: 10
+            periodSeconds: 20
+            successThreshold: 1
+            tcpSocket:
+              port: 82
+            timeoutSeconds: 1
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:29:36Z"
+      lastUpdateTime: "2021-06-21T02:29:36Z"
+      message: Deployment does not have minimum availability.
+      reason: MinimumReplicasUnavailable
+      status: "False"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:39:39Z"
+      lastUpdateTime: "2021-06-21T02:39:39Z"
+      message: ReplicaSet "earth-3cc-web-789c6dddc7" has timed out progressing.
+      reason: ProgressDeadlineExceeded
+      status: "False"
+      type: Progressing
+    observedGeneration: 1
+    replicas: 4
+    unavailableReplicas: 4
+    updatedReplicas: 4
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"1"},"creationTimestamp":"2021-05-11T13:08:07Z","generation":1,"name":"jupiter-crew-deploy","namespace":"jupiter","resourceVersion":"4730","uid":"6b088402-9827-49d4-b26a-04846f801fb8"},"spec":{"progressDeadlineSeconds":600,"replicas":1,"revisionHistoryLimit":10,"selector":{"matchLabels":{"id":"jupiter-crew"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"id":"jupiter-crew"}},"spec":{"containers":[{"image":"httpd:2.4.41-alpine","imagePullPolicy":"IfNotPresent","name":"apache","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File"}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30}}}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    name: jupiter-crew-deploy
+    namespace: jupiter
+    resourceVersion: "2313"
+    uid: db2468af-8dcb-4176-9b4a-90078960eebb
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        id: jupiter-crew
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: jupiter-crew
+      spec:
+        containers:
+        - image: httpd:2.4.41-alpine
+          imagePullPolicy: IfNotPresent
+          name: apache
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:33:26Z"
+      lastUpdateTime: "2021-06-21T02:33:26Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:29:36Z"
+      lastUpdateTime: "2021-06-21T02:33:26Z"
+      message: ReplicaSet "jupiter-crew-deploy-6785c47f64" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    readyReplicas: 1
+    replicas: 1
+    updatedReplicas: 1
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+    creationTimestamp: "2021-06-19T05:57:04Z"
+    generation: 3
+    labels:
+      k8s-app: kube-dns
+    name: coredns
+    namespace: kube-system
+    resourceVersion: "1187"
+    uid: ac729aef-9dac-4e71-91a9-1f813d85d235
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        k8s-app: kube-dns
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 1
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          k8s-app: kube-dns
+      spec:
+        containers:
+        - args:
+          - -conf
+          - /etc/coredns/Corefile
+          image: k8s.gcr.io/coredns/coredns:v1.8.0
+          imagePullPolicy: IfNotPresent
+          livenessProbe:
+            failureThreshold: 5
+            httpGet:
+              path: /health
+              port: 8080
+              scheme: HTTP
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 5
+          name: coredns
+          ports:
+          - containerPort: 53
+            name: dns
+            protocol: UDP
+          - containerPort: 53
+            name: dns-tcp
+            protocol: TCP
+          - containerPort: 9153
+            name: metrics
+            protocol: TCP
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /ready
+              port: 8181
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            limits:
+              memory: 170Mi
+            requests:
+              cpu: 100m
+              memory: 70Mi
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              add:
+              - NET_BIND_SERVICE
+              drop:
+              - all
+            readOnlyRootFilesystem: true
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /etc/coredns
+            name: config-volume
+            readOnly: true
+        dnsPolicy: Default
+        nodeSelector:
+          kubernetes.io/os: linux
+        priorityClassName: system-cluster-critical
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        serviceAccount: coredns
+        serviceAccountName: coredns
+        terminationGracePeriodSeconds: 30
+        tolerations:
+        - key: CriticalAddonsOnly
+          operator: Exists
+        - effect: NoSchedule
+          key: node-role.kubernetes.io/master
+        - effect: NoSchedule
+          key: node-role.kubernetes.io/control-plane
+        volumes:
+        - configMap:
+            defaultMode: 420
+            items:
+            - key: Corefile
+              path: Corefile
+            name: coredns
+          name: config-volume
+  status:
+    availableReplicas: 1
+    conditions:
+    - lastTransitionTime: "2021-06-19T05:57:24Z"
+      lastUpdateTime: "2021-06-19T05:57:24Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2021-06-19T05:57:24Z"
+      lastUpdateTime: "2021-06-19T05:58:06Z"
+      message: ReplicaSet "coredns-558bd4d5db" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 3
+    readyReplicas: 1
+    replicas: 1
+    updatedReplicas: 1
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"1"},"creationTimestamp":"2021-05-11T13:08:07Z","generation":1,"labels":{"id":"manager-api-deployment"},"name":"manager-api-deployment","namespace":"mars","resourceVersion":"4830","uid":"2ace8aa7-a3d1-4d5f-93a1-b87e3a1bd94a"},"spec":{"progressDeadlineSeconds":600,"replicas":4,"revisionHistoryLimit":10,"selector":{"matchLabels":{"id":"manager-api-pod"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"id":"manager-api-pod"}},"spec":{"containers":[{"image":"nginx:1.17.3-alpine","imagePullPolicy":"IfNotPresent","name":"nginx","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File"}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30}}}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    labels:
+      id: manager-api-deployment
+    name: manager-api-deployment
+    namespace: mars
+    resourceVersion: "1920"
+    uid: d9b08c26-989e-482c-9d69-898048b8ef1a
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 4
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        id: manager-api-pod
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: manager-api-pod
+      spec:
+        containers:
+        - image: nginx:1.17.3-alpine
+          imagePullPolicy: IfNotPresent
+          name: nginx
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 4
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:30:23Z"
+      lastUpdateTime: "2021-06-21T02:30:23Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:29:36Z"
+      lastUpdateTime: "2021-06-21T02:30:23Z"
+      message: ReplicaSet "manager-api-deployment-7fdd4b574d" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    readyReplicas: 4
+    replicas: 4
+    updatedReplicas: 4
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"1"},"creationTimestamp":"2021-05-11T13:08:08Z","generation":1,"name":"cleaner","namespace":"mercury","resourceVersion":"4738","uid":"da72fc98-b629-43bf-8ff9-989a5a8f3f63"},"spec":{"progressDeadlineSeconds":600,"replicas":2,"revisionHistoryLimit":10,"selector":{"matchLabels":{"id":"cleaner"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"id":"cleaner"}},"spec":{"containers":[{"args":["bash","-c","while true; do echo `date`: \"remove random file\" \u003e\u003e /var/log/cleaner/cleaner.log; sleep 1; done"],"image":"bash:5.0.11","imagePullPolicy":"IfNotPresent","name":"cleaner-con","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File","volumeMounts":[{"mountPath":"/var/log/cleaner","name":"logs"}]}],"dnsPolicy":"ClusterFirst","initContainers":[{"command":["bash","-c","echo init \u003e /var/log/cleaner/cleaner.log"],"image":"bash:5.0.11","imagePullPolicy":"IfNotPresent","name":"init","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File","volumeMounts":[{"mountPath":"/var/log/cleaner","name":"logs"}]}],"restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30,"volumes":[{"emptyDir":{},"name":"logs"}]}}}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    name: cleaner
+    namespace: mercury
+    resourceVersion: "2359"
+    uid: ec768109-4ebd-4c5b-9179-879968e80647
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 2
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        id: cleaner
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: cleaner
+      spec:
+        containers:
+        - args:
+          - bash
+          - -c
+          - 'while true; do echo `date`: "remove random file" >> /var/log/cleaner/cleaner.log;
+            sleep 1; done'
+          image: bash:5.0.11
+          imagePullPolicy: IfNotPresent
+          name: cleaner-con
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /var/log/cleaner
+            name: logs
+        dnsPolicy: ClusterFirst
+        initContainers:
+        - command:
+          - bash
+          - -c
+          - echo init > /var/log/cleaner/cleaner.log
+          image: bash:5.0.11
+          imagePullPolicy: IfNotPresent
+          name: init
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /var/log/cleaner
+            name: logs
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - emptyDir: {}
+          name: logs
+  status:
+    availableReplicas: 2
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:33:44Z"
+      lastUpdateTime: "2021-06-21T02:33:44Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:29:37Z"
+      lastUpdateTime: "2021-06-21T02:33:44Z"
+      message: ReplicaSet "cleaner-65b97dc747" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    readyReplicas: 2
+    replicas: 2
+    updatedReplicas: 2
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"1"},"creationTimestamp":"2021-05-11T13:08:08Z","generation":1,"name":"web-moon","namespace":"moon","resourceVersion":"3980","uid":"14015f0c-9ab1-4a03-aeec-8cc7d1aac849"},"spec":{"progressDeadlineSeconds":600,"replicas":5,"revisionHistoryLimit":10,"selector":{"matchLabels":{"id":"web-moon"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"id":"web-moon"}},"spec":{"containers":[{"image":"nginx:1.17.3-alpine","imagePullPolicy":"IfNotPresent","name":"nginx","ports":[{"containerPort":80,"protocol":"TCP"}],"resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File","volumeMounts":[{"mountPath":"/usr/share/nginx/html","name":"html-volume"}]}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30,"volumes":[{"configMap":{"defaultMode":420,"name":"configmap-web-moon-html"},"name":"html-volume"}]}}}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    name: web-moon
+    namespace: moon
+    resourceVersion: "2820"
+    uid: 7088694b-59f5-4cef-8343-4f94cc99db9a
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 5
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        id: web-moon
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: web-moon
+      spec:
+        containers:
+        - image: nginx:1.17.3-alpine
+          imagePullPolicy: IfNotPresent
+          name: nginx
+          ports:
+          - containerPort: 80
+            protocol: TCP
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /usr/share/nginx/html
+            name: html-volume
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - configMap:
+            defaultMode: 420
+            name: configmap-web-moon-html
+          name: html-volume
+  status:
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:29:38Z"
+      lastUpdateTime: "2021-06-21T02:29:38Z"
+      message: Deployment does not have minimum availability.
+      reason: MinimumReplicasUnavailable
+      status: "False"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:39:40Z"
+      lastUpdateTime: "2021-06-21T02:39:40Z"
+      message: ReplicaSet "web-moon-7d8564b94" has timed out progressing.
+      reason: ProgressDeadlineExceeded
+      status: "False"
+      type: Progressing
+    observedGeneration: 1
+    replicas: 5
+    unavailableReplicas: 5
+    updatedReplicas: 5
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"4","kubernetes.io/change-cause":"kubectl edit deployment api-new-c32 --namespace=neptune"},"creationTimestamp":"2021-05-11T13:08:08Z","generation":5,"labels":{"id":"api-new-c32"},"name":"api-new-c32","namespace":"neptune","resourceVersion":"4961","uid":"d5f2cf9c-7b64-460b-8598-896e6d726df3"},"spec":{"progressDeadlineSeconds":600,"replicas":3,"revisionHistoryLimit":10,"selector":{"matchLabels":{"id":"api-new-c32"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"id":"api-new-c32"}},"spec":{"containers":[{"image":"ngnix:1.16.3","imagePullPolicy":"IfNotPresent","name":"nginx","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File"}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30}}}}
+      kubernetes.io/change-cause: kubectl edit deployment api-new-c32 --namespace=neptune
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    labels:
+      id: api-new-c32
+    name: api-new-c32
+    namespace: neptune
+    resourceVersion: "2819"
+    uid: cc4d8b9b-dfd4-4f99-9350-650e3368f72a
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 3
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        id: api-new-c32
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: api-new-c32
+      spec:
+        containers:
+        - image: ngnix:1.16.3
+          imagePullPolicy: IfNotPresent
+          name: nginx
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:29:38Z"
+      lastUpdateTime: "2021-06-21T02:29:38Z"
+      message: Deployment does not have minimum availability.
+      reason: MinimumReplicasUnavailable
+      status: "False"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:39:40Z"
+      lastUpdateTime: "2021-06-21T02:39:40Z"
+      message: ReplicaSet "api-new-c32-6775dbd89c" has timed out progressing.
+      reason: ProgressDeadlineExceeded
+      status: "False"
+      type: Progressing
+    observedGeneration: 1
+    replicas: 3
+    unavailableReplicas: 3
+    updatedReplicas: 3
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"1"},"creationTimestamp":"2021-05-11T13:08:09Z","generation":1,"name":"project-23-api","namespace":"pluto","resourceVersion":"4785","uid":"fa6ffe78-687f-4255-85a7-59f8b30e0e27"},"spec":{"progressDeadlineSeconds":600,"replicas":3,"revisionHistoryLimit":10,"selector":{"matchLabels":{"app":"project-23-api"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"app":"project-23-api"}},"spec":{"containers":[{"env":[{"name":"APP_ENV","value":"prod"},{"name":"APP_SECRET_N1","value":"IO=a4L/XkRdvN8jM=Y+"},{"name":"APP_SECRET_P1","value":"-7PA0_Z]\u003e{pwa43r)__"}],"image":"httpd:2.4-alpine","imagePullPolicy":"IfNotPresent","name":"httpd","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File","volumeMounts":[{"mountPath":"/cache1","name":"cache-volume1"},{"mountPath":"/cache2","name":"cache-volume2"},{"mountPath":"/cache3","name":"cache-volume3"}]}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30,"volumes":[{"emptyDir":{},"name":"cache-volume1"},{"emptyDir":{},"name":"cache-volume2"},{"emptyDir":{},"name":"cache-volume3"}]}}}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    name: project-23-api
+    namespace: pluto
+    resourceVersion: "2291"
+    uid: 3969b936-78af-488f-bfb1-785fc041c401
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 3
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        app: project-23-api
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          app: project-23-api
+      spec:
+        containers:
+        - env:
+          - name: APP_ENV
+            value: prod
+          - name: APP_SECRET_N1
+            value: IO=a4L/XkRdvN8jM=Y+
+          - name: APP_SECRET_P1
+            value: -7PA0_Z]>{pwa43r)__
+          image: httpd:2.4-alpine
+          imagePullPolicy: IfNotPresent
+          name: httpd
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          volumeMounts:
+          - mountPath: /cache1
+            name: cache-volume1
+          - mountPath: /cache2
+            name: cache-volume2
+          - mountPath: /cache3
+            name: cache-volume3
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+        volumes:
+        - emptyDir: {}
+          name: cache-volume1
+        - emptyDir: {}
+          name: cache-volume2
+        - emptyDir: {}
+          name: cache-volume3
+  status:
+    availableReplicas: 3
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:33:11Z"
+      lastUpdateTime: "2021-06-21T02:33:11Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:29:37Z"
+      lastUpdateTime: "2021-06-21T02:33:11Z"
+      message: ReplicaSet "project-23-api-6b6fbfccd7" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    readyReplicas: 3
+    replicas: 3
+    updatedReplicas: 3
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"1"},"creationTimestamp":"2021-05-11T13:08:10Z","generation":1,"name":"api","namespace":"venus","resourceVersion":"4794","uid":"d7ec0070-7eeb-4ca8-b8f8-bfe563727d16"},"spec":{"progressDeadlineSeconds":600,"replicas":2,"revisionHistoryLimit":10,"selector":{"matchLabels":{"id":"api"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"id":"api"}},"spec":{"containers":[{"image":"httpd:2.4.41-alpine","imagePullPolicy":"IfNotPresent","name":"python","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File"}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30}}}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    name: api
+    namespace: venus
+    resourceVersion: "2381"
+    uid: 4416c993-e69b-4124-92dc-ff4e3621b132
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 2
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        id: api
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: api
+      spec:
+        containers:
+        - image: httpd:2.4.41-alpine
+          imagePullPolicy: IfNotPresent
+          name: python
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 2
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:33:51Z"
+      lastUpdateTime: "2021-06-21T02:33:51Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:29:37Z"
+      lastUpdateTime: "2021-06-21T02:33:51Z"
+      message: ReplicaSet "api-5548866cb5" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    readyReplicas: 2
+    replicas: 2
+    updatedReplicas: 2
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"deployment.kubernetes.io/revision":"1"},"creationTimestamp":"2021-05-11T13:08:10Z","generation":1,"name":"frontend","namespace":"venus","resourceVersion":"4809","uid":"03bc237b-bb81-4591-b0e0-0e284d509af0"},"spec":{"progressDeadlineSeconds":600,"replicas":5,"revisionHistoryLimit":10,"selector":{"matchLabels":{"id":"frontend"}},"strategy":{"rollingUpdate":{"maxSurge":"25%","maxUnavailable":"25%"},"type":"RollingUpdate"},"template":{"metadata":{"creationTimestamp":null,"labels":{"id":"frontend"}},"spec":{"containers":[{"image":"nginx:1.17.3-alpine","imagePullPolicy":"IfNotPresent","name":"nginx","resources":{},"terminationMessagePath":"/dev/termination-log","terminationMessagePolicy":"File"}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","schedulerName":"default-scheduler","securityContext":{},"terminationGracePeriodSeconds":30}}}}
+    creationTimestamp: "2021-06-21T02:29:36Z"
+    generation: 1
+    name: frontend
+    namespace: venus
+    resourceVersion: "1930"
+    uid: b6078322-0827-4fa2-b554-dbef3eecac42
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 5
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        id: frontend
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          id: frontend
+      spec:
+        containers:
+        - image: nginx:1.17.3-alpine
+          imagePullPolicy: IfNotPresent
+          name: nginx
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 5
+    conditions:
+    - lastTransitionTime: "2021-06-21T02:30:23Z"
+      lastUpdateTime: "2021-06-21T02:30:23Z"
+      message: Deployment has minimum availability.
+      reason: MinimumReplicasAvailable
+      status: "True"
+      type: Available
+    - lastTransitionTime: "2021-06-21T02:29:38Z"
+      lastUpdateTime: "2021-06-21T02:30:24Z"
+      message: ReplicaSet "frontend-5d5658f9d4" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    observedGeneration: 1
+    readyReplicas: 5
+    replicas: 5
+    updatedReplicas: 5
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""

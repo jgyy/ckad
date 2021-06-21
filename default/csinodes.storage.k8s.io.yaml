@@ -1,0 +1,22 @@
+apiVersion: v1
+items:
+- apiVersion: storage.k8s.io/v1
+  kind: CSINode
+  metadata:
+    annotations:
+      storage.alpha.kubernetes.io/migrated-plugins: kubernetes.io/cinder
+    creationTimestamp: "2021-06-19T05:57:03Z"
+    name: minikube
+    ownerReferences:
+    - apiVersion: v1
+      kind: Node
+      name: minikube
+      uid: f4bc7a93-641e-4704-ae6a-89c36a26727c
+    resourceVersion: "227"
+    uid: 77bf2db9-eb67-45ea-b5de-5ba3218a6eb6
+  spec:
+    drivers: null
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
