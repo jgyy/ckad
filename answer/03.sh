@@ -1,0 +1,1 @@
+cp ./03.yaml /opt/course/3/job.yaml
